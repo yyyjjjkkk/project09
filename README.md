@@ -36,18 +36,21 @@ index.jsp <br>
      ㄴ 댓글로 한줄평 <br>
      ㄴ  <br>
  <br>
+ 
 >>4. 토론(discussion.jsp) <br>
      ㄴ 목록형태 게시판 <br>
      ㄴ dno, nickname, dtitle, ddate, dcontent, dimg,  dreadcnt, dreproot, drepstep, drepindent <br>
          글번호, 닉넴, 글제목, 날짜, 내용,       사진,   조회수,   댓글 관련------ <br>
          t=tip <br>
  <br>
+ 
 >>5. 자유게시판 페이지(board.jsp) <br>
      ㄴ 목록형태 게시판 <br>
      ㄴ bno, nickname, btitle, bdate, bcontent, bimg,  breadcnt, breproot, brepstep, brepindent <br>
          글번호, 닉넴, 글제목, 날짜, 내용,       사진,   조회수,   댓글 관련------ <br>
          b=board <br>
  <br>
+ 
 >>6.  인기글 (댓글 수 기준으로 ) <br>
      ㄴ예정 <br>
  <br>
