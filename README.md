@@ -8,7 +8,7 @@ study(하루공부)
 
 >>기본 설정 <br>
 layout.jsp <br>
-<h3>top.jsp</h3> <br>
+top.jsp <br>
   : 공부기록,공부꿀팁,자유게시판,인기글 (게시판 목록) <br>
 footer.jsp <br>
 index.jsp <br>
