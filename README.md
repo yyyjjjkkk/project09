@@ -1,10 +1,10 @@
 # project09
 study(하루공부)
 
-- 한줄평(관리자가 영화 등록하면 거기에 댓글로 한줄평) record
-- 토론(글, 그림) discussion
-- 자유게시판(글, 그림) board
-- mypage mypage
+- 한줄평(관리자가 영화 등록하면 거기에 댓글로 한줄평)  <h4>record</h4>
+- 토론(글, 그림) <h4>discussion</h4>
+- 자유게시판(글, 그림) <h4>board</h4>
+- mypage <h4>mypage</h4>
 - 위의 4개의 게시판마다 db 필요
 
 >>기본 설정 <br>
