@@ -1,11 +1,15 @@
 # project09
 study(하루공부)
 
-- 한줄평(관리자가 영화 등록하면 거기에 댓글로 한줄평)  <h4>record</h4>
-- 토론(글, 그림) <h4>discussion</h4>
-- 자유게시판(글, 그림) <h4>board</h4>
-- mypage <h4>mypage</h4>
-- 위의 4개의 게시판마다 db 필요
+- 한줄평(관리자가 영화 등록하면 거기에 댓글로 한줄평)  : pj09_record
+- 토론(글, 그림) : pj09_discussion
+- 자유게시판(글, 그림) : pj09_board
+- mypage 
+
+- 로그인 : pj09_login
+- 회원 : pj09_member
+- 
+
 
 >>기본 설정 <br>
 layout.jsp <br>
@@ -17,9 +21,9 @@ index.jsp <br>
 
 >>1. 로그인화면 (login.jsp) <br>
      ㄴ무조건 로그인화면부터 나옴 <br>
-     ㄴ ID   [             ] <br>
-         PW [             ] <br>
-         회원가입 (버튼) <br>
+      ID [             ] <br>
+      PW [             ] <br>
+      회원가입 (버튼) <br>
      ㄴ loginfail이면 로그인화면으로  <br>
      ㄴ loginsuccess면 main화면으로 <br>
  
