@@ -16,7 +16,7 @@ index.jsp
 
 
 
-1. 로그인화면 (login.jsp)
+1. 로그인화면 (login.jsp) <br>
      ㄴ무조건 로그인화면부터 나옴
      ㄴ ID   [             ]
          PW [             ]
