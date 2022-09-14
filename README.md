@@ -6,7 +6,7 @@ study(하루공부)
 - 자유게시판(글, 그림)
 - mypage 
 
->>기본 설정<< <br>
+>>기본 설정 <br>
 layout.jsp <br>
 top.jsp <br>
   ㄴ 공부기록,공부꿀팁,자유게시판,인기글 (게시판 목록) <br>
@@ -16,7 +16,7 @@ index.jsp <br>
  <br> <br> <br>
 
 
-1. 로그인화면 (login.jsp) <br>
+>>1. 로그인화면 (login.jsp) <br>
      ㄴ무조건 로그인화면부터 나옴 <br>
      ㄴ ID   [             ] <br>
          PW [             ] <br>
@@ -24,7 +24,9 @@ index.jsp <br>
      ㄴ loginfail이면 로그인화면으로  <br>
      ㄴ loginsuccess면 main화면으로 <br>
  <br>
-2. 회원가입 (enroll.jsp) <br>
+ 
+ 
+>>2. 회원가입 (enroll.jsp) <br>
      ㄴ name,id,pw,nickname,address <br>
      ㄴ id는 중복확인 (json) <br>
  <br> <br> <br>
