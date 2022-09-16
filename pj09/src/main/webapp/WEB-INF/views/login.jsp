@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,10 +19,20 @@ td{
 width: 120px;
 }
 </style>
+<c:set var="result" value="${param.result}"/>
+<c:choose>
+	<c:when test="${result=='loginfail'}">
+		<script type="text/javascript">
+			window.onload=function(){
+				alert("로그인 확인 해주세요!로그인~");
+			}
+		</script>
+	</c:when>
+</c:choose>
 </head>
 <body>
 <h2 align="center">로그인하기</h2>
-<form action="loginact" method="post">
+<form action="loginCheck" method="post">
 <table border="1" align="center">
 <tr>
 	<th>ID</th>

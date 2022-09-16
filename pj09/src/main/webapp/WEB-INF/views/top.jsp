@@ -11,70 +11,63 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+
+
+
+
+
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head> 
-<c:set var="result" value="${param.result}"/>
-<c:choose>
-	<c:when test="${result=='loginfail'}">
-		<script type="text/javascript">
-			window.onload=function(){
-				alert("로그인 확인 해주세요!!");
-			}
-		</script>
-	</c:when>
-</c:choose>
+
 
 <header>
 <table >
-	<tr>
-		<td>
-				<h1>회원관리 프로그램ver1.0</h1>
-		</td>
-		<td width="300">
+<tr>
+	
 		
+		       <td><a href="index">홈으로</a></td>
+				<td><h1>회원 정보 관리</h1></td>
+				
+			<td>
 			<c:choose>
-				<c:when test="${loginState==true}">
-					<a href=""><span>환영합니다!!${member.id }님</span></a>&emsp;
+				<c:when test="${logindo==true}">
+					<a href=""><span>환영합니다!!${pj09_login.id }님</span></a>&emsp;
 					<a href="logout">로그아웃</a>
 				</c:when>
 				<c:otherwise>
-					<a href="logina">로그인</a>
+					<a href="loginaa">로그인</a>
 				</c:otherwise>
 			</c:choose>
-		<!--  -->	
-		</td>				
-	</tr>
+			</td></tr>
+
 </table>
 </header>
-<!--  -->
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">1. 정보 관리<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="input">입력</a></li>
-          <li><a href="output">출력</a></li>
-        </ul>
-      </li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">2. 성적<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">성적 </a></li>
-          <li><a href="#">관리</a></li>
-          <li><a href="#">Page 1-3</a></li>
-        </ul>
-      </li>
-     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">3. 파일업로드<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="load">파일추가 </a></li>                    
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
+<script type="text/javascript">
+setInterval("dpTime()", 1000);
+function dpTime() {
+   var now = new Date();
+   hours = now.getHours();
+   min = now.getMinutes();
+   sec = now.getSeconds();
+   
+   if(hours > 12){
+      hours -= 12;
+      ampm = "오후";
+   } else {
+      ampm = "오전"
+   }
+   if(hours < 10){
+      hours = "0"+hours;
+   }
+   if(min < 10){
+      min = "0"+min;
+   }
+   if(sec < 10){
+      sec = "0"+sec;
+   }
+   
+   document.getElementById("dpTime").innerHTML = ampm + " " + hours + ":" + min + ":" + sec
+}
+</script>
 </html>
